@@ -1,0 +1,301 @@
+/* Startup Website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+html, body, .cover {
+	height: 100% ;
+}
+
+.cover {
+	background: url('img/couchfriends.jpg') top left no-repeat;
+	background-size: cover;
+	display: table;
+	width: 100%;
+	padding: 0 20%;
+	box-shadow: inset 0 0 100px #100;
+	
+}
+
+.cover-text {
+	text-align: center;
+	color:white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.cover-text h1 {
+	font-size: 60px;
+	color:burlywood;
+	margin: 0;
+	letter-spacing: -4px;
+}
+
+.nav navbar {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+}
+
+.testimonial {
+	background: #100000 ;
+}
+
+blockquote {
+	border: none;
+	font-family: Georgia , Times, monospace;
+	font-style: italic;
+	font-size: 32px;
+	color: aliceblue ;
+	
+}
+
+blockquote cite {
+	display:block;
+	font-family: Helvitica, sans-serif, Arial;
+	font-style: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: right;
+	color:antiquewhite; 
+}
+
+section {
+	min-height: 50vh;
+    padding: 8rem 9% 8rem;
+}
+
+.services {
+  background-color: var(--second-bg-color);
+}
+
+.services h2 {
+  margin-bottom: 5rem;
+  color: #fff;
+
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-container .services-box {
+  flex: 1 1 30rem;
+  background: var(--bg-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--second-bg-color);
+  transition: 0.5s ease;
+}
+
+.services-container .services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.services-box h3 {
+  font-size: 2.6rem;
+  color: #0ef;
+}
+
+.services-box p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.about {
+  background-color: #fff;
+}
+
+.about h2 {
+  margin-bottom: 5rem;
+  color: var(--bg-color);
+
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-container .about-box {
+  flex: 1 1 30rem;
+  background: #f8f9f9;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.5s ease;
+}
+
+.about-container .about-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.about-box h3 {
+  font-size: 2.6rem;
+  color: #2c3e50;
+}
+
+.about-box p {
+  font-size: 16px;
+  color: #566573;
+  text-align: left;
+}
+
+#about-cards div {
+	border: 2px solid red;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+h2{
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 60px;
+}
+
+h2 + p{
+	text-align: center;
+	margin-top: -50px;
+}
+
+#team {
+	background: url('img/fan.jpg') top left no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	
+}
+
+footer{
+	background: #222;
+	color:beige;
+	text-align: center;
+	padding: 20px;
+	font-family: Times, sans-serif, serif;
+}
+
+footer a {
+	color:red;
+}
+
+/*------- Media Queries -------*/
+
+@media only screen and (max-width : 568px)
+{
+	.cover h1 {
+		fontsize: 40px; 
+	}
+	section {
+		padding: 20px;
+	
+}
+
+
+
+
+
+
+
+
+
